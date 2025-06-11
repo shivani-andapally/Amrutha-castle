@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Document</title>
+  <style>
+    body {
+        margin: 0;
+    }
+    /*nav*/
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #f3f3f4;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);       
+        backdrop-filter: blur(5px);
+    }
+    .subnav {
+      display: flex;
+      align-items: center;
+      background-color: ;
+      list-style: none;
+      margin: 0;
+    }
+    .img1 {
+      width: 100px;
+      height: 100px;
+      margin-right: 60px;
+      margin-left: 100px;
+    }
+
+    .nav-item {
+      margin-left: 120px;
+      list-style: none;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color:black;
+      font-weight: 900;
+      margin-left: 50px;
+
+    }
+    .dropdown:hover .dropdown-menu{
+      display:block;
+    }
+    .dropdown-item{
+      list-style-type:none;
+      padding: 5px;
+    }
+    .drop-link{
+      text-decoration: none;
+      color: black;
+    }
+    .dropdown-menu{
+      text-decoration: none;      
+      position:absolute;
+      z-index: 10;
+      display: none;   
+      padding: 10px;
+      background-color:rgb(231, 237, 238);     
+      margin-left: 60px;
+      width: 90px;
+      box-shadow: 3px 3px;
+
+    }
+    .hero-section {
+      position: relative;
+      background-image: url(assets/dinehome2.jpeg);
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay-content {
+      text-align: center;
+      color:black;
+      padding: 10px;
+      border-radius: 10px;
+      background-color:transparent;
+      height: 170px;
+      margin-top: 200px;
+    }
+
+    .overlay-content:hover {
+      background-color:whitesmoke;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 10px;
+      background: #D78341;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .dine-container {
+      display: flex;
+      flex-direction: row;
+    }
+    .dine-container1 {
+      display: flex;
+      flex-direction: row;
+      margin-left: 170px;
+    }
+
+    .dine-card {
+      width: 300px;
+      padding: 30px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0px 2px 4px rgba(0, 0,0,0.2);
+      margin: 20px;
+      height: 270px;
+    }
+
+    .dine-card img {
+      width: 100%;
+      height: 230px;
+    }
+
+    .chef-container {
+      background-color:lightyellow;
+      height: 300px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .chef-para {
+      text-align: justify;
+    }
+
+    .chef-block {
+      background-color: peachpuff;
+      padding: 25px;
+      border-radius: 25px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0,0.2);
+      font-family: Georgia, serif;
+      color: #4e342e;
+      line-height: 1.6;
+      margin: 10px;
+    }
+
+    .chef-img {
+      background-color: aliceblue;
+      transition: transform 0.5s ease;
+      border-radius: 20px;
+      height: 280px;
+      margin-top: 10px;
+    }
+
+    .chef-img:hover {
+      transform: scale(1.1);
+    }
+
+    .main-img {
+      height: 270px;
+      width: 270px; 
+    }
+
+    .final-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: bisque;
+    }
+
+    .final-in {
+      width: 100px;
+      padding: 8px;
+    }
+
+    .final-h {
+      margin-left: 500px;
+    }
+    .start{
+      margin-left: 600px;
+    }
+
+     
+    .head{
+      margin-left: 30px;
+    }
+    /*footer*/
+    footer.foot {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #00bcd4;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #00bcd4;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="subnav">
+      <li><img class="img1" src="assets/logo1.png" alt="logo" /></li>
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+
+      <li class="nav-item dropdown "><a href="#" class="nav-link">Facilities <i class="fa-solid fa-caret-down"></i></a>
+           <ul class="dropdown-menu">
+              <li class="dropdown-item" ><a href="Dining.html"  class="drop-link">Dining</a></li>
+              <li  class="dropdown-item" ><a href="rooms.html" class="drop-link" >Rooms</a></li>
+        </ul>
+       </li>
+
+      <li class="nav-item"><a href="About us.html" class="nav-link">About us</a></li>
+      <li class="nav-item"><a href="Gallery.html" class="nav-link">Gallery</a></li>
+      <li class="nav-item"><a href="Contact us.html" class="nav-link">Contact us</a></li>
+
+    </ul>
+  </nav>
+
+  <section class="hero-section">
+    <div class="overlay-content">
+      <h1>Dine at Amrutha Castle</h1>
+      <h4 style="color:black">Luxury. Ambience. Taste.</h4>
+      <a href="#reservation" class="btn">Reserve a Table</a>
+    </div>
+  </section>
+
+  <h1 class="start">Dining Experience</h1>
+  <div class="dine-container1">
+    <div class="dine-card">
+      <img src="assets/Indoor dining.jpeg">
+      <div class="card-content">
+        <h3 class="head">Indoor Dining</h3>
+      </div>    
+    </div>
+
+    <div class="dine-card">
+      <img src="assets/Outdoor Dining .jpeg">
+      <div>
+        <h3 class="head">Outdoor/Alfresco</h3>
+      </div>    
+    </div>
+
+    <div class="dine-card">
+      <img src="assets/private dining.jpeg">
+      <div>
+        <h3 class="head">Private/Romantic Dining</h3>
+      </div>    
+    </div>
+  </div> 
+
+  <h1 class="start">Why Dine With Us</h1>
+  <div class="dine-container">
+    <div class="dine-card">
+      <img src="assets/Organic ingrediants.jpeg">
+      <div class="card-content">
+        <h3 class="head">Organic Ingredients</h3>
+      </div>    
+    </div>
+
+    <div class="dine-card">
+      <img src="assets/Chef Specialities.jpeg">
+      <div>
+        <h3 class="head">Chef Specialties</h3>
+      </div>    
+    </div>
+
+    <div class="dine-card">
+      <img src="assets/Romantic ambience .jpeg">
+      <div>
+        <h3 class="head">Romantic Ambience</h3>
+      </div>    
+    </div>
+
+    <div class="dine-card">
+      <img src="assets/custom celebrations.jpg">
+      <div>
+        <h3 class="head">Custom Celebrations</h3>
+      </div>    
+    </div>
+  </div>
+  <hr>
+
+  <div class="chef-container">
+    <div class="chef-img">
+      <img src="assets/cheflogo-removebg.png" class="main-img">
+    </div> 
+    <div class="chef-block">
+      <h1 class="chef-h">MEET THE CHEF</h1>
+      <h5 class="chef-para">
+        Meet Our Chef: Chef Arjun Varma  
+        With over 15 years of culinary excellence, Chef Arjun Varma brings both passion and 
+        precision to every plate. Trained in classical Indian and international cuisines, 
+        he has worked in five-star resorts across India and Southeast Asia, mastering flavors 
+        that delight every kind of guest from traditional spice lovers to continental foodies.
+        Chef Arjun believes that great food is an experience, not just a meal. His creations 
+        are known for their bold flavors, creative presentation, and a deep respect for
+        locally sourced, seasonal ingredients.
+        Whether you're enjoying a serene breakfast by the pool,
+        a candlelight dinner under the stars, or a spicy tandoori 
+        platter straight from the grill—Chef Arjun’s dishes promise to turn your stay into a flavorful memory.
+      </h5>   
+    </div>    
+  </div>
+  <hr>
+
+  <h1 class="start" id="reservation">RESERVATION</h1>
+  <div class="final-container">
+    <div class="div1">
+      <input type="date" placeholder="date" class="final-in">
+    </div>
+    <div class="div1">
+      <input type="time" placeholder="Time" class="final-in">
+    </div>
+    <div class="div1">
+      <input type="text" placeholder="guest" class="final-in">
+    </div>
+  </div>
+
+</body>
+<footer class="foot">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Amrutha Castle</h3>
+      <p>Your destination for comfort, luxury, and royalty in Hyderabad.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contact us.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+      <p><i class="fas fa-phone"></i> +91-1234567890</p>
+      <p><i class="fas fa-envelope"></i> info@amruthacastle.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Amrutha Castle. All Rights Reserved.</p>
+  </div>
+</footer>
+</html>

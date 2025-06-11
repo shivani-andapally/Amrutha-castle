@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Amrutha Castle</title>
+    <style>
+    body {
+        margin: 0;
+    }
+    /*nav*/
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #f3f3f4;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);       
+        backdrop-filter: blur(5px);
+    }
+    .subnav {
+      display: flex;
+      align-items: center;
+      background-color: ;
+      list-style: none;
+      margin: 0;
+    }
+    .img1 {
+      width: 100px;
+      height: 100px;
+      margin-right: 60px;
+      margin-left: 100px;
+    }
+
+    .nav-item {
+      margin-left: 120px;
+      list-style: none;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color:black;
+      font-weight: 900;
+      margin-left: 58px;
+
+    }
+    .dropdown:hover .dropdown-menu{
+      display:block;
+    }
+    .dropdown-item{
+      list-style-type:none;
+      padding: 5px;
+    }
+    .drop-link{
+      text-decoration: none;
+      color: black;
+    }
+    .dropdown-menu{
+      text-decoration: none;      
+      position:absolute;
+      z-index: 10;
+      display: none;   
+      padding: 10px;
+      background-color:rgb(231, 237, 238);     
+      margin-left: 60px;
+      width: 90px;
+      box-shadow: 3px 3px;
+    }
+     
+     
+        .header-image-container {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            background-image: url('https://amruthacastle.in/assets/images/img-06.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header-image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 20px 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+     
+        .section {
+            padding: 5px 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 6px;
+        }
+
+            .section h2 {
+                color: rgb(21, 102, 153);
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+
+            .section p, .section ul {
+                font-size: 15px;
+                line-height: 20px;
+                color: black;
+            }
+
+        ul {
+            padding-left: 15px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .subheading {
+            font-weight: bold;
+            color: black;
+        }
+        /*footer*/
+    footer.foot {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #00bcd4;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #00bcd4;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+  
+    <nav>
+    <ul class="subnav">
+      <li><img class="img1" src="assets/logo1.png" alt="logo" /></li>
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+
+      <li class="nav-item dropdown "><a href="#" class="nav-link">Facilities <i class="fa-solid fa-caret-down"></i></a>
+           <ul class="dropdown-menu">
+              <li class="dropdown-item" ><a href="Dining.html"  class="drop-link">Dining</a></li>
+              <li  class="dropdown-item" ><a href="rooms.html" class="drop-link" >Rooms</a></li>
+        </ul>
+       </li>
+
+      <li class="nav-item"><a href="About us.html" class="nav-link">About us</a></li>
+      <li class="nav-item"><a href="Gallery.html" class="nav-link">Gallery</a></li>
+      <li class="nav-item"><a href="Contact us.html" class="nav-link">Contact us</a></li>
+
+    </ul>
+  </nav>
+   
+    <div class="header-image-container">
+        <div class="header-image-text">About Us</div>
+    </div>
+
+   
+    <div class="section" id="about">
+        
+        <p>
+            Amrutha Castle stands as a symbol of royal grandeur. Designed with the opulence of medieval castles in mind, it offers guests an enchanting atmosphere of royalty and class. Its striking architecture, plush interiors, and beautiful landscapes create an unforgettable impression. Every aspect of the hotel exudes luxury, from the moment you step inside until your departure.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Accommodation</h2>
+        <p>Indulge in a stay like no other at Amrutha Castle. From elegant standard rooms to palatial suites, each space ensures comfort and luxury.</p>
+        <ul>
+            <li><span class="subheading">Deluxe Rooms</span> - Ideal for solo travelers and couples, offering all modern amenities for a pleasant stay.</li>
+            <li><span class="subheading">Executive Suites</span> - Spacious rooms with high-end furnishings and breathtaking views.</li>
+            <li><span class="subheading">Royal Suites</span> - The pinnacle of opulence with living areas, refined décor, and majestic views.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Dining</h2>
+        <p>Dining at Amrutha Castle is an experience that goes beyond taste.</p>
+        <ul>
+            <li><span class="subheading">Deluxe Restaurant</span> - A regal dining ambiance with Indian and international delicacies.</li>
+            <li><span class="subheading">Castle Café</span> - Casual, stylish café for breakfast, tea, and light meals.</li>
+            <li><span class="subheading">Bar & Lounge</span> - Relax with a curated collection of spirits and cocktails in an elegant setting.</li>
+        </ul>
+    </div>
+
+    
+    <div class="section">
+        <h2>Events & Celebrations</h2>
+        <p>Whether it's a fairy-tale wedding or a corporate conference, Amrutha Castle is the ideal venue.</p>
+        <ul>
+            <li><span class="subheading">Weddings</span> - Lavish or intimate, customized packages to make your big day magical.</li>
+            <li><span class="subheading">Meetings & Conferences</span> - Professional spaces with modern tech for productive sessions.</li>
+            <li><span class="subheading">Private Parties</span> - Celebrate birthdays, anniversaries, or special events in style.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Wellness & Recreation</h2>
+        <p>Your comfort and relaxation are our priority.</p>
+        <ul>
+            <li><span class="subheading">Spa & Massage</span> - Rejuvenating treatments combining tradition and modern therapies.</li>
+            <li><span class="subheading">Fitness Center</span> - Fully-equipped space for all your workout needs.</li>
+            <li><span class="subheading">Swimming Pool</span> - A refreshing spot to relax or enjoy a peaceful swim.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Location</h2>
+        <p>
+            Conveniently located in the heart of the city, Amrutha Castle offers easy access to major attractions, shopping centers, and business hubs. Whether for business or leisure, you're always close to where you need to be.
+        </p>
+    </div>
+</body>
+<footer class="foot">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Amrutha Castle</h3>
+      <p>Your destination for comfort, luxury, and royalty in Hyderabad.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contact us.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+      <p><i class="fas fa-phone"></i> +91-1234567890</p>
+      <p><i class="fas fa-envelope"></i> info@amruthacastle.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Amrutha Castle. All Rights Reserved.</p>
+  </div>
+</footer>
+</html>

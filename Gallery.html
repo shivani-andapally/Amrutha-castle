@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Gallery</title>
+  <style>
+    body {
+        margin: 0;
+    }
+    /*nav*/
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #f3f3f4;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);       
+        backdrop-filter: blur(5px);
+    }
+    .subnav {
+      display: flex;
+      align-items: center;
+      background-color: ;
+      list-style: none;
+      margin: 0;
+    }
+    .img1 {
+      width: 100px;
+      height: 100px;
+      margin-right: 60px;
+      margin-left: 100px;
+    }
+
+    .nav-item {
+      margin-left: 120px;
+      list-style: none;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color:black;
+      font-weight: 900;
+      margin-left: 50px;
+
+    }
+    .dropdown:hover .dropdown-menu{
+      display:block;
+    }
+    .dropdown-item{
+      list-style-type:none;
+      padding: 5px;
+    }
+    .drop-link{
+      text-decoration: none;
+      color: black;
+    }
+    .dropdown-menu{
+      text-decoration: none;      
+      position:absolute;
+      z-index: 10;
+      display: none;   
+      padding: 10px;
+      background-color:rgb(231, 237, 238);     
+      margin-left: 60px;
+      width: 90px;
+      box-shadow: 3px 3px;
+    }
+    
+    
+    .rowstyle {
+      height: 200px;
+      width: 100px;
+    }
+    .imgstyle {
+      height: 300px;
+      width: 300px;
+    }
+    .trstyle {
+      padding: 5px;
+    }
+    .divstyle {
+      padding: 10px;
+    }
+    .hstyle {
+      margin-left: 100px;
+    }
+    .pstyle {
+      margin-left: 200px;
+    }
+    .tr {
+      padding: 10px;
+    }
+    .p1style {
+      font-style: italic;
+      font-size: larger;
+      font-weight: 40px;
+    }
+    .h1style {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: times;
+    }
+    .img-container {
+      position: relative;
+      width: 100%;
+      height: 550px;
+      overflow: hidden;
+    }
+    .f1{
+          text-decoration: none;
+          color: black;
+        }
+    .text-on-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 60px;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px black;
+    }
+    /*footer*/
+    footer.foot {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #00bcd4;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #00bcd4;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.img1style{
+  width: 1510px;
+}
+
+  </style>
+</head>
+<body>
+<nav>
+    <ul class="subnav">
+      <li><img class="img1" src="assets/logo1.png" alt="logo" /></li>
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+
+      <li class="nav-item dropdown "><a href="#" class="nav-link">Facilities <i class="fa-solid fa-caret-down"></i></a>
+           <ul class="dropdown-menu">
+              <li class="dropdown-item" ><a href="Dining.html"  class="drop-link">Dining</a></li>
+              <li  class="dropdown-item" ><a href="rooms.html" class="drop-link" >Rooms</a></li>
+        </ul>
+       </li>
+
+      <li class="nav-item"><a href="About us.html" class="nav-link">About us</a></li>
+      <li class="nav-item"><a href="Gallery.html" class="nav-link">Gallery</a></li>
+      <li class="nav-item"><a href="Contact us.html" class="nav-link">Contact us</a></li>
+
+    </ul>
+  </nav>
+  <div class="img-container">
+    <img class="img1style" src="assets/g2.jpeg" alt="RoomDescription" />
+    <div class="text-on-image">Album</div>
+  </div>
+
+  <br><br><br>
+
+  <div class="divstyle">
+    <table align="center" class="rowstyle" cellpadding="20" cellspacing="20">
+      <tr class="trstyle">
+        <th><img class="imgstyle" src="assets/building.png" alt=""></th>
+        <th><img class="imgstyle" src="assets/banner.jpg" alt=""></th>
+        <th><img class="imgstyle" src="assets/topview.png" alt=""></th>
+      </tr>
+    </table>
+
+    <table align="center" class="rowstyle" cellpadding="20" cellspacing="20">
+      <tr>
+        <th><img class="imgstyle" src="assets/starters.jpg" alt=""></th>
+        <th><img class="imgstyle" src="assets/drink.png" alt=""></th>
+        <th><img class="imgstyle" src="assets/food2.jpg" alt=""></th>
+      </tr>
+    </table>
+
+    <table align="center" class="rowstyle" cellpadding="20" cellspacing="20">
+      <tr>
+        <th><img class="imgstyle" src="assets/party.png" alt=""></th>
+        <th><img class="imgstyle" src="assets/dining.png" alt=""></th>
+        <th><img class="imgstyle" src="assets/party2.png" alt=""></th>
+      </tr>
+    </table>
+
+    <table align="center" class="rowstyle" cellpadding="20" cellspacing="20">
+      <tr>
+        <th><img class="imgstyle" src="assets/waitinghall.png" alt=""></th>
+        <th><img class="imgstyle" src="assets/hall.png" alt=""></th>
+        <th><img class="imgstyle" src="assets/hall2.png" alt=""></th>
+      </tr>
+    </table>
+
+    <table align="center" class="rowstyle" cellpadding="20" cellspacing="20">
+      <tr>
+        <th><img class="imgstyle" src="assets/bedroom1.jpg" alt=""></th>
+        <th><img class="imgstyle" src="assets/steps.png" alt=""></th>
+        <th><img class="imgstyle" src="assets/room.png" alt=""></th>
+      </tr>
+    </table>
+
+    <table align="center" class="rowstyle" cellpadding="20" cellspacing="20">
+      <tr>
+        <th><img class="imgstyle" src="assets/swimmingpool.jpg" alt=""></th>
+        <th><img class="imgstyle" src="assets/pool.png" alt=""></th>
+        <th><img class="imgstyle" src="assets/pool2.png" alt=""></th>
+      </tr>
+    </table>
+
+    <table align="center" class="rowstyle" cellpadding="20" cellspacing="20">
+      <tr>
+        <th><img class="imgstyle" src="assets/wall3.png" alt=""></th>
+        <th><img class="imgstyle" src="assets/wall.png" alt=""></th>
+        <th><img class="imgstyle" src="assets/wall2.png" alt=""></th>
+      </tr>
+    </table>
+  </div>
+
+</body>
+<footer class="foot">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Amrutha Castle</h3>
+      <p>Your destination for comfort, luxury, and royalty in Hyderabad.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contact us.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+      <p><i class="fas fa-phone"></i> +91-1234567890</p>
+      <p><i class="fas fa-envelope"></i> info@amruthacastle.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Amrutha Castle. All Rights Reserved.</p>
+  </div>
+</footer>
+</html>
